@@ -12,6 +12,9 @@ class BingWebSearch(metaclass=Singleton):
             search_term,
             **additional_parameters
         )
+        search_result = self._search(headers, search_parameters)
+
+        return search_result
 
     def _prepare_search(self, search_term, **additional_parameters):
         additional_headers = additional_parameters.get('headers', {})
