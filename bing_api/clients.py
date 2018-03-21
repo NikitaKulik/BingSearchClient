@@ -1,3 +1,4 @@
+import requests
 from metaclasses import Singleton
 
 
@@ -45,3 +46,13 @@ class BingWebSearch(metaclass=Singleton):
             search_parameters.update(additional_parameters)
 
         return search_parameters
+
+    def _search(self, headers, search_parameters):
+        response = requests.get(
+            self.search_url,
+            headers=headers,
+            params=search_parameters
+        )
+        response.raise_for_status()
+
+        return response.json()
