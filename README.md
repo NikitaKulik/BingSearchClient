@@ -2,6 +2,8 @@
 Simple search client for Bing API V7. Details description: <br/>
 https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-web-api-v7-reference
 
+Python 3.5+
+
 **Example:**
 <p>from bing_api.clients import BingWebSearch</p>
 
