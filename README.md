@@ -2,7 +2,7 @@
 Simple search client for Bing API V7. Details description: <br/>
 https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-web-api-v7-reference
 
-<p>Example:</p>
+**Example:**
 <p>from bing_api.clients import BingWebSearch</p>
 
 <p>search_url = 'https://api.cognitive.microsoft.com/bing/v7.0/search'<br/>
