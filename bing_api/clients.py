@@ -14,7 +14,7 @@ class BingWebSearch(metaclass=Singleton):
         :param additional_parameters:
         :return:
         """
-        headers, search_parameters = self._prepare_search_parameters(
+        headers, search_parameters = self._prepare_search(
             search_term,
             **additional_parameters
         )
